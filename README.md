@@ -89,9 +89,44 @@ python3 -m http.server 8000
 
 ## Deployment
 
-Push to `main`. GitHub Pages serves the repository root (`build_type: legacy`,
-source `main:/`), and `CNAME` points it at `aryanbandyopadhyay.me`. HTTPS is enforced on the
-custom domain.
+Push to `main`. GitHub Pages currently serves the repository root
+(`build_type: legacy`, source `main:/`), and `CNAME` points it at
+`aryanbandyopadhyay.me`.
+
+### Custom domain and HTTPS
+
+The domain resolves correctly (the four GitHub Pages `A` records, no conflicting
+`AAAA` or parking records), but a certificate can only be issued once GitHub has
+verified domain ownership. Two things are needed, and only the first is in this
+repository:
+
+1. **TXT verification record** at the DNS provider (not in this repo):
+
+   ```
+   Type  TXT
+   Host  _github-pages-challenge-Aryans-lab
+   Value <code shown at Settings → Pages → Add a domain>
+   ```
+
+   The host is the bare label only — the provider appends the domain. Pasting the
+   full FQDN silently creates a record that never validates. Keep the record in
+   place permanently; removing it un-verifies the domain.
+
+2. **Re-save the custom domain** in *Settings → Pages* to order a fresh
+   certificate, then tick **Enforce HTTPS** once it reads *issued*.
+
+`protected_domain_state` in the Pages API reports the ownership state:
+`null` (no claim yet), `unverified` (certificate will not be issued), or
+`approved`. It is the first thing to check when TLS misbehaves.
+
+### Why `.github/workflows/pages.yml` exists
+
+On a legacy branch build, GitHub Pages cannot hold the account-level domain
+verification claim across builds, which leaves the domain `unverified` and the
+site presenting the `*.github.io` wildcard certificate. Publishing as an Actions
+artifact avoids that. The workflow is **inert** until you switch
+*Settings → Pages → Build and deployment → Source* to **GitHub Actions**; doing so
+is the durable fix and is safe to leave for later.
 
 ## Editing content
 
