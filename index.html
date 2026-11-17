@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Aryan Bandyopadhyay — Physics &amp; Scientific Computing</title>
+  <meta name="description" content="Aryan Bandyopadhyay — DST-DISHA Scholar in Physics at NISER Bhubaneswar. Semiconductor radiation detectors (4H-SiC LGADs) in Silvaco TCAD, spectral solvers for Burgers turbulence, physics-informed neural networks, and experimental spectroscopy." />
+  <meta name="author" content="Aryan Bandyopadhyay" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#05070c" />
+  <meta name="color-scheme" content="dark light" />
+
+  <link rel="canonical" href="https://aryanbandyopadhyay.me/" />
+
+  <!-- Discovery-->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Aryan Bandyopadhyay" />
+  <meta property="og:title" content="Aryan Bandyopadhyay — Physics &amp; Scientific Computing" />
+  <meta property="og:description" content="4H-SiC LGAD detector physics, spectral fluid solvers, inverse PINNs and experimental spectroscopy. NISER Bhubaneswar &amp; IIT Mandi." />
+  <meta property="og:url" content="https://aryanbandyopadhyay.me/" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:image" content="https://aryanbandyopadhyay.me/assets/img/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aryan Bandyopadhyay — Physics &amp; Scientific Computing" />
+  <meta property="profile:first_name" content="Aryan" />
+  <meta property="profile:last_name" content="Bandyopadhyay" />
+  <meta property="profile:username" content="Aryans-lab" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aryan Bandyopadhyay — Physics &amp; Scientific Computing" />
+  <meta name="twitter:description" content="Semiconductor radiation detectors, spectral shocks, and scientific machine learning. NISER Bhubaneswar." />
+  <meta name="twitter:image" content="https://aryanbandyopadhyay.me/assets/img/og-card.png" />
+
+  <!-- Icons & install-->
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- Typography: self‑hosted, preloaded, no third‑party fonts-->
+  <link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="/assets/css/site.css" />
+
+  <!-- Structured data: researcher profile, works and code-->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://aryanbandyopadhyay.me/#page",
+        "url": "https://aryanbandyopadhyay.me/",
+        "name": "Aryan Bandyopadhyay — Physics & Scientific Computing",
+        "inLanguage": "en",
+        "dateModified": "2026-11-17",
+        "mainEntity": { "@id": "https://aryanbandyopadhyay.me/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://aryanbandyopadhyay.me/#person",
+        "name": "Aryan Bandyopadhyay",
+        "givenName": "Aryan",
+        "familyName": "Bandyopadhyay",
+        "jobTitle": "Integrated M.Sc. Physics Researcher (DST-DISHA Scholar)",
+        "url": "https://aryanbandyopadhyay.me/",
+        "mainEntityOfPage": "https://aryanbandyopadhyay.me/",
+        "email": "mailto:aryan.bandyopadhyay@niser.ac.in",
+        "telephone": "+91-9874957175",
+        "image": "https://aryanbandyopadhyay.me/assets/img/og-card.png",
+        "sameAs": [
+          "https://github.com/Aryans-lab",
+          "https://github.com/Aryans-lab/Aryans-lab.github.io"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "National Institute of Science Education and Research (NISER), Bhubaneswar",
+            "alternateName": "NISER",
+            "url": "https://www.niser.ac.in/"
+          }
+        ],
+        "affiliation": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "National Institute of Science Education and Research (NISER), Bhubaneswar",
+            "department": { "@type": "Organization", "name": "School of Physical Sciences" },
+            "url": "https://www.niser.ac.in/"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Indian Institute of Technology Mandi",
+            "url": "https://www.iitmandi.ac.in/"
+          }
+        ],
+        "award": [
+          "Best Poster Award (Experimental) — Heavy Flavour Meet 2026, Gujarat, India",
+          "DST-DISHA Scholarship — Department of Atomic Energy, Government of India (2024–2029)",
+          "All India Rank 88 (99.6 percentile) — National Entrance Screening Test (NEST) 2024",
+          "All India Rank 369 — WBJEE 2024; 97.8 percentile — JEE Main 2024",
+          "Captain, NISER Chess Team; U-19 KVS National Chess Champion (peak rating > 1750)"
+        ],
+        "knowsAbout": [
+          "4H-SiC Low Gain Avalanche Detectors",
+          "Semiconductor device simulation (Silvaco Victory Device, Synopsys Sentaurus TCAD)",
+          "Lucky-drift impact ionisation and radiation defect modelling (C-DLTS)",
+          "Viscous Burgers turbulence and spectral PDE solvers",
+          "Physics-informed neural networks and Cramér–Rao lower bound analysis",
+          "Convolutional neural networks for galaxy morphology classification",
+          "Electron spin resonance, Zeeman spectroscopy and optical interferometry"
+        ],
+        "knowsLanguage": ["en", "bn", "hi"]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://aryanbandyopadhyay.me/#sic-lgad",
+        "headline": "Electrical, Gain and Radiation Characterization of 4H-SiC Low Gain Avalanche Detectors",
+        "author": [
+          { "@id": "https://aryanbandyopadhyay.me/#person" },
+          { "@type": "Person", "name": "Prabhakar Palni" }
+        ],
+        "dateCreated": "2026-05",
+        "creativeWorkStatus": "In preparation",
+        "abstract": "A first-principles Lucky-Drift impact ionisation model for 4H-SiC along <0001> (a_h = 1.92e7 cm^-1, b_h = 9.80e6 V/cm) implemented in Silvaco Victory Device, validated against C-V, 1/C^2 Mott-Schottky (V_pt = 75.5 V), reverse I-V, 241Am alpha gain (M = 2.02-2.84) and MIP gain (2.06-2.81) of 50 micrometre epitaxial SICAR prototypes, and extended to proton-irradiated C-DLTS defect compensation up to 1e14 n_eq/cm^2.",
+        "keywords": "4H-SiC, LGAD, impact ionization, TCAD, C-DLTS, radiation hardness"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://aryanbandyopadhyay.me/#burgers",
+        "name": "Shock Waves and Burgers Turbulence in 1D Viscous Fluids",
+        "author": { "@id": "https://aryanbandyopadhyay.me/#person" },
+        "codeRepository": "https://github.com/Aryans-lab/Computational_Physics_Lab/tree/main/project_burgulence",
+        "programmingLanguage": "Python",
+        "description": "Five 1D viscous Burgers solvers written from scratch (Strang-split spectral FFT, Crank-Nicolson with Sherman-Morrison, Lax-Wendroff, Upwind, FTCS) verified against an 8,192-point exact Cole-Hopf reference; shock thickness scales as nu^0.985 and the energy spectrum falls as k^-2.03.",
+        "keywords": "Burgers turbulence, spectral methods, Cole-Hopf, structure functions"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://aryanbandyopadhyay.me/#galaxy",
+        "name": "Galaxy Morphology Classification using CNNs",
+        "author": { "@id": "https://aryanbandyopadhyay.me/#person" },
+        "codeRepository": "https://github.com/Aryans-lab/Galaxy-Morphology-Classification-using-CNNs",
+        "programmingLanguage": "Python",
+        "description": "Leak-free stratified classification of 156,219 debiased Galaxy Zoo 2 galaxies with a custom VGG-style CNN, reaching 0.966 ROC-AUC and 0.983 PR-AUC on 23,433 held-out galaxies.",
+        "keywords": "galaxy morphology, convolutional neural networks, Galaxy Zoo 2"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://aryanbandyopadhyay.me/#pinn",
+        "name": "Inverse PINNs and Cramér-Rao Bound Analysis for Heat Diffusion",
+        "author": { "@id": "https://aryanbandyopadhyay.me/#person" },
+        "codeRepository": "https://github.com/Aryans-lab/Heat-Diffusion-PINNs",
+        "programmingLanguage": "Python",
+        "description": "Exact-constraint PINNs solving 1D-3D heat diffusion with Levenberg-Marquardt optimisation (6.0e-4 relative L2 error) and a one-loop UV variance correction recovering Cramér-Rao bound accuracy across 4,000 pseudo-experiments.",
+        "keywords": "physics-informed neural networks, Cramér-Rao bound, inverse problems"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aryanbandyopadhyay.me/#website",
+        "url": "https://aryanbandyopadhyay.me/",
+        "name": "Aryan Bandyopadhyay",
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient field-->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__grid"></div>
+    <div class="ambient__bloom ambient__bloom--a"></div>
+    <div class="ambient__bloom ambient__bloom--b"></div>
+  </div>
+
+  <div class="progress-thread" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       MASTHEAD
+       ══════════════════════════════════════════════════════════════════-->
+  <header class="masthead">
+    <div class="shell masthead__inner">
+      <a class="brand" href="#top" aria-label="Aryan Bandyopadhyay — home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" fill="#070c15" />
+            <path d="M11 29 20 10l9 19" stroke="#38bdf8" stroke-width="1.7" stroke-linejoin="round" />
+            <path d="M15.4 23h9.2" stroke="#34d399" stroke-width="1.7" stroke-linecap="round" />
+            <circle cx="20" cy="10" r="2.1" fill="#fbbf24" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Aryan Bandyopadhyay</span>
+          <span class="brand__role">Physics · Scientific computing</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#research"><span class="nav__num">01</span>Research</a>
+        <a class="nav__link" href="#lab"><span class="nav__num">02</span>Live lab</a>
+        <a class="nav__link" href="#experimental"><span class="nav__num">03</span>Laboratory</a>
+        <a class="nav__link" href="#academics"><span class="nav__num">04</span>Education</a>
+        <a class="nav__link" href="#honors"><span class="nav__num">05</span>Honors</a>
+        <a class="nav__link" href="#contact"><span class="nav__num">06</span>Contact</a>
+      </nav>
+
+      <div class="masthead__actions">
+        <button class="cmd-trigger" type="button" data-open-cmd aria-label="Open command palette">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" stroke-linecap="round" />
+          </svg>
+          <span class="kbd">⌘K</span>
+        </button>
+
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to journal paper theme">
+          <svg class="icon-btn__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z" stroke-linejoin="round" />
+          </svg>
+          <svg class="icon-btn__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <button class="btn btn--primary masthead__cv" type="button" data-open-cv>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 19h14" stroke-linecap="round" />
+          </svg>
+          CV
+        </button>
+
+        <button class="icon-btn mobile-toggle" type="button" aria-expanded="false" aria-controls="mobilePanel" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <a class="mobile-panel__link" href="#research"><span class="nav__num">01</span>Research</a>
+      <a class="mobile-panel__link" href="#lab"><span class="nav__num">02</span>Live lab</a>
+      <a class="mobile-panel__link" href="#experimental"><span class="nav__num">03</span>Laboratory</a>
+      <a class="mobile-panel__link" href="#academics"><span class="nav__num">04</span>Education</a>
+      <a class="mobile-panel__link" href="#honors"><span class="nav__num">05</span>Honors</a>
+      <a class="mobile-panel__link" href="#contact"><span class="nav__num">06</span>Contact</a>
+      <div class="mobile-panel__cta">
+        <button class="btn btn--ghost btn--sm" type="button" data-open-cv>Open CV</button>
+        <a class="btn btn--primary btn--sm" href="mailto:aryan.bandyopadhyay@niser.ac.in">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ═══════════════════════════════════════════════════════════════════
+         HERO
+         ════════════════════════════════════════════════════════════════-->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <span class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span><strong>Open</strong> for Summer 2027 research internships</span>
+          </span>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__title-line">Aryan</span>
+            <span class="hero__title-line"><em>Bandyopadhyay</em></span>
+          </h1>
+
+          <p class="mono hero__role">Integrated M.Sc. Physics · DST-DISHA Scholar · NISER Bhubaneswar</p>
+
+          <p class="hero__lede">
+            I work where <strong>semiconductor device physics</strong> meets numerical mathematics —
+            deriving impact-ionisation models for 4H-SiC avalanche detectors in TCAD, rebuilding
+            viscous-shock solvers from scratch to see where spectral methods stop telling the truth,
+            and pinning neural estimators to the <span class="accent">Cramér–Rao bound</span>.
+          </p>
+
+          <div class="stat-rail" role="list">
+            <div class="stat" role="listitem">
+              <div class="stat__value">9.01<span class="stat__unit">/10</span></div>
+              <div class="stat__label">CGPA · Physics</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__value">88<span class="stat__unit">AIR</span></div>
+              <div class="stat__label">NEST 2024 · 99.6 pct</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__value">2.84<span class="stat__unit">×</span></div>
+              <div class="stat__label">Peak α-particle gain</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__value">5</div>
+              <div class="stat__label">Burgers solvers, from scratch</div>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#research">
+              Read the research
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h13m0 0-5-5m5 5-5 5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="CV_Aryan_Bandyopadhyay.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                <path d="M14 3v5h5" stroke-linejoin="round" />
+                <path d="M6 3h8l5 5v13H6z" stroke-linejoin="round" />
+              </svg>
+              Download CV
+            </a>
+          </div>
+
+          <p class="hero__links">
+            <a href="mailto:aryan.bandyopadhyay@niser.ac.in">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m4 7 8 6 8-6" stroke-linecap="round" />
+              </svg>
+              aryan.bandyopadhyay@niser.ac.in
+            </a>
+            <a href="https://github.com/Aryans-lab" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+              </svg>
+              github.com/Aryans-lab
+            </a>
+            <a href="#lab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M9 3h6M10 3v6L5 19a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 19l-5-10V3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              live instruments
+            </a>
+          </p>
+        </div>
+
+        <!-- Instrument panel-->
+        <div class="hero__instrument">
+          <div class="instrument">
+            <div class="instrument__head">
+              <span class="instrument__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="instrument__title" id="heroInstrumentTitle">4H-SiC LGAD · carrier drift &amp; gain</span>
+              <span class="instrument__live"><i aria-hidden="true"></i>LIVE</span>
+            </div>
+
+            <div class="instrument__modes" role="tablist" aria-label="Instrument mode">
+              <button class="mode-tab is-active" type="button" role="tab" data-hero-mode="sic" aria-selected="true">4H-SiC LGAD</button>
+              <button class="mode-tab" type="button" role="tab" data-hero-mode="burgers" aria-selected="false">Burgers shock</button>
+            </div>
+
+            <div class="canvas-stage">
+              <canvas id="heroCanvas" role="img" aria-label="Animated simulation of carrier drift and impact ionisation inside a 4H-SiC low gain avalanche detector, or a viscous Burgers shock profile."></canvas>
+              <div class="canvas-readout">
+                <span id="heroReadoutA">E_peak = 1.71 MV/cm · V_pt = 75.5 V</span>
+                <span class="em" id="heroReadoutB">click to inject ²⁴¹Am α-track</span>
+              </div>
+            </div>
+
+            <div class="instrument__foot">
+              <span class="instrument__hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M3 17c3 0 3-10 6-10s3 10 6 10 3-6 6-6" stroke-linecap="round" />
+                </svg>
+                Lucky-Drift α<sub>h</sub>(E) = a<sub>h</sub>·exp(−b<sub>h</sub>/E)
+              </span>
+              <button class="pulse-btn" type="button" id="heroPulse" aria-label="Inject an alpha particle track">Inject α-track</button>
+            </div>
+          </div>
+
+          <div class="equation-strip">
+            <div class="equation-cell">
+              <div class="equation-cell__sym">a<sub>h</sub></div>
+              <div class="equation-cell__val">1.92×10⁷ cm⁻¹</div>
+            </div>
+            <div class="equation-cell">
+              <div class="equation-cell__sym">b<sub>h</sub></div>
+              <div class="equation-cell__val">9.80×10⁶ V/cm</div>
+            </div>
+            <div class="equation-cell">
+              <div class="equation-cell__sym">α-CCE @ 10¹⁴</div>
+              <div class="equation-cell__val">52.5 %</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Affiliation strip-->
+      <div class="shell">
+        <div class="cred-strip" aria-label="Affiliations">
+          <span class="cred">NISER Bhubaneswar<i>School of Physical Sciences</i></span>
+          <span class="cred">IIT Mandi<i>Summer research · 2026</i></span>
+          <span class="cred">DAE · DST-DISHA<i>Government of India</i></span>
+          <span class="cred">HBNI<i>Affiliated university</i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         01 · RESEARCH
+         ════════════════════════════════════════════════════════════════-->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div class="section__head-main">
+            <span class="kicker">01 — Selected work</span>
+            <h2 class="section__title" id="research-title">Five projects, one instinct: <em>derive it, then measure it.</em></h2>
+            <p class="section__desc">
+              Each entry links to a technical sheet with the method, the numbers that survived scrutiny,
+              and a citation you can lift straight into BibTeX.
+            </p>
+          </div>
+          <span class="section__index mono">05 projects · 3 open-source</span>
+        </div>
+
+        <div class="filters reveal">
+          <div class="chip-row" role="group" aria-label="Filter projects by domain">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All<span class="chip__count">05</span></button>
+            <button class="chip" type="button" data-filter="detector" aria-pressed="false">Detectors &amp; TCAD<span class="chip__count">01</span></button>
+            <button class="chip" type="button" data-filter="cfd" aria-pressed="false">Fluids<span class="chip__count">01</span></button>
+            <button class="chip" type="button" data-filter="sciml" aria-pressed="false">SciML<span class="chip__count">02</span></button>
+            <button class="chip" type="button" data-filter="math" aria-pressed="false">Mathematical physics<span class="chip__count">01</span></button>
+          </div>
+
+          <label class="search-field">
+            <span class="sr-only">Filter research by keyword</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" stroke-linecap="round" />
+            </svg>
+            <input type="search" id="researchSearch" placeholder="Filter by method, advisor, equation…" autocomplete="off" />
+          </label>
+        </div>
+
+        <p class="sr-only" aria-live="polite" id="researchCount"></p>
+
+        <div class="project-grid">
+          <!-- LGAD ––––––––––––––––––––––––––––––––––––––––––––––––––––-->
+          <article class="card project-card project-card--wide reveal" data-project data-category="detector"
+            data-search="4H-SiC LGAD low gain avalanche detector Silvaco victory device lucky drift impact ionization Mott-Schottky C-DLTS proton irradiation Palni IIT Mandi TCAD semiconductor radiation detector alpha 241Am MIP gain Fermi pinning">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__meta"><strong>IIT Mandi</strong> · May 2026 – present<br>Summer research intern · Prof. Prabhakar Palni</span>
+                <span class="badge badge--amber">Manuscript in preparation</span>
+              </div>
+
+              <div>
+                <h3 class="project-card__title">Electrical, gain &amp; radiation characterization of 4H-SiC LGADs</h3>
+                <p class="project-card__sub">Silvaco Victory Device · Lucky-Drift impact ionization · C-DLTS</p>
+              </div>
+
+              <div class="formula">α_h(E) = a_h·exp(−b_h/E) &nbsp;·&nbsp; a_h = 1.92×10⁷ cm⁻¹, b_h = 9.80×10⁶ V/cm &nbsp;·&nbsp; V_pt = 75.5 V</div>
+
+              <ul class="project-card__list">
+                <li>Derived a first-principles <strong>Lucky-Drift</strong> impact-ionization model for 4H-SiC along ⟨0001⟩ and implemented it in Silvaco Victory Device.</li>
+                <li>Validated static C–V, 1/C² Mott–Schottky behaviour and reverse I–V on 50 µm epitaxial SICAR prototypes, with peak fields of 1.65–1.74 MV/cm.</li>
+                <li>Reproduced ²⁴¹Am α-particle charge collection and gain (M = 2.02–2.84 over 150–350 V) within 1σ, and quantified MIP internal gain at 2.06–2.81.</li>
+                <li>Modelled proton-irradiated C-DLTS trap compensation (Z<sub>1/2</sub>, EH<sub>3</sub>, EH<sub>6/7</sub> up to 10¹⁴ n<sub>eq</sub>/cm²), capturing Fermi-level pinning and α-CCE degradation to 52.5%.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">4H-SiC LGAD</span>
+                <span class="tag">Silvaco TCAD</span>
+                <span class="tag">Lucky-Drift</span>
+                <span class="tag">Mott–Schottky</span>
+                <span class="tag">C-DLTS</span>
+                <span class="tag">Radiation hardness</span>
+              </div>
+            </div>
+
+            <!-- Hand‑drawn device cross‑section-->
+            <div class="device-figure">
+              <svg viewBox="0 0 900 218" role="img" aria-labelledby="devTitle devDesc">
+                <title id="devTitle">4H-SiC low gain avalanche detector cross-section</title>
+                <desc id="devDesc">Layer stack of a 50 micrometre epitaxial 4H-SiC LGAD: p-plus contact, thin highly doped gain layer, and n-minus drift region above an n-plus substrate, with the multiplication zone highlighted.</desc>
+                <defs>
+                  <linearGradient id="gradGain" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#38bdf8" stop-opacity="0.06" />
+                    <stop offset="0.55" stop-color="#38bdf8" stop-opacity="0.28" />
+                    <stop offset="1" stop-color="#34d399" stop-opacity="0.08" />
+                  </linearGradient>
+                  <linearGradient id="gradDrift" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#34d399" stop-opacity="0.12" />
+                    <stop offset="1" stop-color="#34d399" stop-opacity="0.03" />
+                  </linearGradient>
+                </defs>
+
+                <!-- layers-->
+                <rect x="70" y="26" width="760" height="26" fill="rgba(148,163,184,0.10)" stroke="rgba(148,163,184,0.22)" />
+                <rect x="70" y="52" width="760" height="34" fill="url(#gradGain)" stroke="rgba(56,189,248,0.35)" />
+                <rect x="70" y="86" width="760" height="92" fill="url(#gradDrift)" stroke="rgba(148,163,184,0.18)" />
+                <rect x="70" y="178" width="760" height="24" fill="rgba(148,163,184,0.10)" stroke="rgba(148,163,184,0.22)" />
+
+                <!-- labels-->
+                <g fill="#8b9ab0" font-family="JetBrains Mono, monospace" font-size="11">
+                  <text x="84" y="44">p⁺ contact</text>
+                  <text x="84" y="74" fill="#38bdf8">n⁺ gain layer — multiplication</text>
+                  <text x="84" y="140" fill="#34d399">n⁻ epitaxial drift · 50 µm</text>
+                  <text x="84" y="195">n⁺ substrate</text>
+                </g>
+
+                <!-- multiplication callout-->
+                <g stroke="#38bdf8" stroke-width="1" fill="none" opacity="0.85">
+                  <path d="M560 52v34" stroke-dasharray="3 3" />
+                  <path d="M660 52v34" stroke-dasharray="3 3" />
+                </g>
+                <g fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="10">
+                  <text x="568" y="46" opacity="0.9">E_peak 1.71 MV/cm</text>
+                </g>
+
+                <!-- impact ionisation sketch: hole path deflecting-->
+                <g stroke="#34d399" stroke-width="1.6" fill="none" opacity="0.9">
+                  <path d="M120 168c40-14 60-44 96-44s50 22 84 18" stroke-linecap="round" />
+                </g>
+                <circle cx="300" cy="142" r="3" fill="#fbbf24" />
+                <circle cx="300" cy="142" r="8" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.45" />
+
+                <!-- depth scale-->
+                <g stroke="rgba(148,163,184,0.35)" stroke-width="1">
+                  <path d="M860 26v176" />
+                  <path d="M854 26h6M854 86h6M854 178h6M854 202h6" />
+                </g>
+                <g fill="#5d6b80" font-family="JetBrains Mono, monospace" font-size="9">
+                  <text x="868" y="30">0</text>
+                  <text x="868" y="90">4 µm</text>
+                  <text x="868" y="182">54 µm</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="project-card__foot">
+              <button class="link-quiet" type="button" data-open-project="lgad">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 5h16M4 12h16M4 19h10" stroke-linecap="round" />
+                </svg>
+                Technical sheet &amp; BibTeX
+              </button>
+              <button class="link-quiet" type="button" data-jump-lab="lgad">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M9 3h6M10 3v6L5 19a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 19l-5-10V3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Simulate
+              </button>
+              <a class="link-quiet link-quiet--push" href="https://github.com/Aryans-lab" target="_blank" rel="noopener">
+                Code in preparation
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- BURGERS ––––––––––––––––––––––––––––––––––––––––––––––––‑-->
+          <article class="card project-card reveal" data-project data-category="cfd"
+            data-search="Burgers turbulence shock waves spectral FFT Crank-Nicolson Sherman-Morrison Lax-Wendroff upwind FTCS Cole-Hopf structure functions viscosity Subhasish Basak NISER computational physics">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__meta"><strong>NISER</strong> · Oct – Nov 2026<br>Research project · Prof. Subhasish Basak</span>
+                <span class="badge badge--verdigris">Verified to 10⁻⁹</span>
+              </div>
+
+              <div>
+                <h3 class="project-card__title">Shock waves &amp; Burgers turbulence in 1D viscous fluids</h3>
+                <p class="project-card__sub">Five solvers from scratch · exact Cole–Hopf reference</p>
+              </div>
+
+              <div class="formula">∂<sub>t</sub>u + u∂<sub>x</sub>u = ν∂<sub>xx</sub>u &nbsp;·&nbsp; δ ∝ ν⁰·⁹⁸⁵ &nbsp;·&nbsp; E(k) ∝ k⁻²·⁰³</div>
+
+              <ul class="project-card__list">
+                <li>Implemented five 1D viscous Burgers solvers from scratch: Strang-split spectral FFT, Crank–Nicolson with Sherman–Morrison, Lax–Wendroff, Upwind and FTCS.</li>
+                <li>Verified spatial convergence (to spectral 10⁻⁹) and von Neumann stability against an 8,192-point exact Cole–Hopf reference.</li>
+                <li>Extracted shock thickness, the energy spectrum and bifractal structure-function scaling ζ<sub>p</sub>.</li>
+                <li>Quantified upwind numerical viscosity (ν<sub>num</sub>/ν = 3.7 at N = 256) and grid-locking across three decades of ν.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">Spectral FFT</span>
+                <span class="tag">Crank–Nicolson</span>
+                <span class="tag">Cole–Hopf</span>
+                <span class="tag">Structure functions</span>
+              </div>
+            </div>
+
+            <div class="figure-strip figure-strip--three">
+              <figure data-figure="assets/img/figures/burgers-fig02-shock-formation.png" data-caption="Steepening of the initial shear wave into a shock at t_s = 1, and the asymptotic tanh profile against the exact solution." tabindex="0" role="button" aria-label="Enlarge figure: shock formation">
+                <img src="assets/img/figures/burgers-fig02-shock-formation.png" alt="Space-time heat map of shock steepening beside the asymptotic tanh profile compared with the exact solution." loading="lazy" decoding="async" width="1600" height="583" />
+                <figcaption>Fig. 2 · Steepening of the shear wave into a shock at t<sub>s</sub> = 1, and the asymptotic tanh profile against the exact solution.</figcaption>
+              </figure>
+              <figure data-figure="assets/img/figures/burgers-fig03-shock-scaling.png" data-caption="Strain diverges then saturates, and the measured shock thickness scales as ν^0.98 against the theoretical 4ν/U." tabindex="0" role="button" aria-label="Enlarge figure: shock scaling">
+                <img src="assets/img/figures/burgers-fig03-shock-scaling.png" alt="Log plot of maximum strain versus time, and shock width versus viscosity with a fitted exponent of 0.98." loading="lazy" decoding="async" width="1600" height="514" />
+                <figcaption>Fig. 3 · Maximum strain diverges then saturates; measured shock width against the theoretical 4ν/U.</figcaption>
+              </figure>
+              <figure data-figure="assets/img/figures/burgers-fig04-energy-spectra.png" data-caption="Energy spectra for three viscosities, the compensated spectrum showing the k⁻² inertial range, and the cut-off scaling inversely with viscosity." tabindex="0" role="button" aria-label="Enlarge figure: energy spectra">
+                <img src="assets/img/figures/burgers-fig04-energy-spectra.png" alt="Three panels: energy spectra, compensated spectra with a k minus two reference, and spectral cut-off versus viscosity." loading="lazy" decoding="async" width="1600" height="508" />
+                <figcaption>Fig. 4 · Energy spectra for three viscosities, the compensated spectrum with its k⁻² range, and the cut-off scaling as 1/ν.</figcaption>
+              </figure>
+            </div>
+
+            <div class="project-card__foot">
+              <button class="link-quiet" type="button" data-open-project="burgers">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 5h16M4 12h16M4 19h10" stroke-linecap="round" />
+                </svg>
+                Technical sheet &amp; BibTeX
+              </button>
+              <button class="link-quiet" type="button" data-jump-lab="burgers">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M3 17c3 0 3-10 6-10s3 10 6 10 3-6 6-6" stroke-linecap="round" />
+                </svg>
+                Live FFT
+              </button>
+              <a class="link-quiet link-quiet--push" href="https://github.com/Aryans-lab/Computational_Physics_Lab/tree/main/project_burgulence" target="_blank" rel="noopener">
+                project_burgulence
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- GALAXY ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+          <article class="card project-card reveal" data-project data-category="sciml"
+            data-search="galaxy morphology classification CNN convolutional neural network Galaxy Zoo 2 ResNet50 VGG Grad-CAM XGBoost Gini M20 photometric deep learning astrophysics">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__meta"><strong>NISER</strong> · Jul 2025<br>Independent project · School of Physical Sciences</span>
+                <span class="badge badge--signal">0.966 ROC–AUC</span>
+              </div>
+
+              <div>
+                <h3 class="project-card__title">Galaxy morphology classification with CNNs</h3>
+                <p class="project-card__sub">156,219 galaxies · leak-free stratified pipeline</p>
+              </div>
+
+              <div class="formula">ROC–AUC = 0.966 ± 0.001 · PR–AUC = 0.983 · Macro-F1 = 0.893 · N = 23,433</div>
+
+              <ul class="project-card__list">
+                <li>Built a leak-free stratified pipeline on 156,219 debiased Galaxy Zoo 2 galaxies (t<sub>01</sub> &gt; 0.8) with training-isolated oversampling.</li>
+                <li>Benchmarked a custom 3-block VGG-style CNN against frozen ImageNet ResNet50 and classical photometric descriptors with XGBoost.</li>
+                <li>Reported bootstrap confidence intervals and Grad-CAM evidence for every headline metric.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">PyTorch</span>
+                <span class="tag">VGG CNN</span>
+                <span class="tag">ResNet50</span>
+                <span class="tag">Grad-CAM</span>
+              </div>
+            </div>
+
+            <div class="figure-strip figure-strip--three">
+              <figure data-figure="assets/img/figures/galaxy-roc-curve.png" data-caption="Receiver operating characteristic on the held-out Galaxy Zoo 2 test set (AUC = 0.977 for this run)." tabindex="0" role="button" aria-label="Enlarge figure: ROC curve">
+                <img src="assets/img/figures/galaxy-roc-curve.png" alt="ROC curve rising steeply to a true positive rate above 0.9 at low false positive rate." loading="lazy" decoding="async" width="1600" height="1255" />
+                <figcaption>ROC curve · held-out test set, AUC = 0.977 for this run.</figcaption>
+              </figure>
+              <figure data-figure="assets/img/figures/galaxy-confusion-matrix.png" data-caption="Confusion matrix over the morphological classes." tabindex="0" role="button" aria-label="Enlarge figure: confusion matrix">
+                <img src="assets/img/figures/galaxy-confusion-matrix.png" alt="Confusion matrix of predicted versus true morphological classes." loading="lazy" decoding="async" width="800" height="600" />
+                <figcaption>Confusion matrix · predicted against true morphological class.</figcaption>
+              </figure>
+              <figure data-figure="assets/img/figures/galaxy-per-class-metrics.png" data-caption="Per-class precision, recall and F1 scores." tabindex="0" role="button" aria-label="Enlarge figure: per-class metrics">
+                <img src="assets/img/figures/galaxy-per-class-metrics.png" alt="Bar chart of per-class precision, recall and F1 scores." loading="lazy" decoding="async" width="1600" height="999" />
+                <figcaption>Per-class precision, recall and F1 across the morphological classes.</figcaption>
+              </figure>
+            </div>
+
+            <div class="project-card__foot">
+              <button class="link-quiet" type="button" data-open-project="galaxy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 5h16M4 12h16M4 19h10" stroke-linecap="round" />
+                </svg>
+                Technical sheet &amp; BibTeX
+              </button>
+              <button class="link-quiet" type="button" data-jump-lab="galaxy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke-linecap="round" />
+                </svg>
+                Open figures
+              </button>
+              <a class="link-quiet link-quiet--push" href="https://github.com/Aryans-lab/Galaxy-Morphology-Classification-using-CNNs" target="_blank" rel="noopener">
+                Repository
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PINN ––––––––––––––––––––––––––––––––––––––––––––––––––––-->
+          <article class="card project-card reveal" data-project data-category="sciml"
+            data-search="inverse PINN physics informed neural network heat diffusion Cramer Rao bound Levenberg-Marquardt Fisher information UV divergence one-loop correction stochastic heat equation estimator bias NumPy PyTorch">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__meta"><strong>NISER</strong> · Jun – Aug 2025<br>Independent research project</span>
+                <span class="badge badge--violet">Cramér–Rao accuracy</span>
+              </div>
+
+              <div>
+                <h3 class="project-card__title">Inverse PINNs &amp; Cramér–Rao bound analysis for heat diffusion</h3>
+                <p class="project-card__sub">Exact-constraint PINNs · 1D–3D · 4,000 pseudo-experiments</p>
+              </div>
+
+              <div class="formula">rel. L² = 6.0×10⁻⁴ &nbsp;·&nbsp; Var(θ̂) ≥ I(θ)⁻¹ &nbsp;·&nbsp; one-loop UV correction</div>
+
+              <ul class="project-card__list">
+                <li>Solved 1D–3D heat diffusion with exact-constraint PINNs and Levenberg–Marquardt optimisation, reaching 6.0×10⁻⁴ relative L² error.</li>
+                <li>Derived the closed-form ideal-PINN objective through a stochastic heat-equation equivalence, and proved that omitting the marginal log-determinant induces estimator bias.</li>
+                <li>Characterised UV variance scaling across 1D–3D and implemented a one-loop correction recovering Cramér–Rao bound accuracy across 4,000 pseudo-experiments.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">PINNs</span>
+                <span class="tag">Levenberg–Marquardt</span>
+                <span class="tag">Fisher information</span>
+                <span class="tag">UV divergence</span>
+              </div>
+            </div>
+
+            <div class="figure-strip figure-strip--three">
+              <figure data-figure="assets/img/figures/pinn-uv-divergence.png" data-caption="Prior variance growth with spectral cut-off across 1D–3D, effective ρ at fixed loss weights, and the residual bias and standard deviation relative to the Cramér–Rao bound." tabindex="0" role="button" aria-label="Enlarge figure: UV divergence">
+                <img src="assets/img/figures/pinn-uv-divergence.png" alt="Three panels showing variance growth with spectral cut-off, effective rho, and bias relative to the Cramér–Rao bound." loading="lazy" decoding="async" width="1600" height="473" />
+                <figcaption>UV scaling · prior variance with spectral cut-off across 1D–3D, effective ρ, and bias and deviation relative to the Cramér–Rao bound.</figcaption>
+              </figure>
+              <figure data-figure="assets/img/figures/pinn-bias-vs-weight.png" data-caption="Estimator bias versus loss weight for the ideal-PINN objective." tabindex="0" role="button" aria-label="Enlarge figure: bias versus weight">
+                <img src="assets/img/figures/pinn-bias-vs-weight.png" alt="Line plots of bias against loss weight across several designs." loading="lazy" decoding="async" width="1600" height="391" />
+                <figcaption>Bias versus loss weight for the ideal-PINN objective, across several designs.</figcaption>
+              </figure>
+              <figure data-figure="assets/img/figures/pinn-3d-snapshots.png" data-caption="Snapshots of the 3D heat-diffusion field from the forward solve." tabindex="0" role="button" aria-label="Enlarge figure: 3D snapshots">
+                <img src="assets/img/figures/pinn-3d-snapshots.png" alt="Isosurface snapshots of a three-dimensional heat diffusion field evolving in time." loading="lazy" decoding="async" width="1500" height="900" />
+                <figcaption>3D snapshots · the forward heat-diffusion field evolving in time.</figcaption>
+              </figure>
+            </div>
+
+            <div class="project-card__foot">
+              <button class="link-quiet" type="button" data-open-project="pinn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 5h16M4 12h16M4 19h10" stroke-linecap="round" />
+                </svg>
+                Technical sheet &amp; BibTeX
+              </button>
+              <button class="link-quiet" type="button" data-jump-lab="pinn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke-linecap="round" />
+                </svg>
+                Open figures
+              </button>
+              <a class="link-quiet link-quiet--push" href="https://github.com/Aryans-lab/Heat-Diffusion-PINNs" target="_blank" rel="noopener">
+                Repository
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- TOPOLOGY ––––––––––––––––––––––––––––––––––––––––––––––––-->
+          <article class="card project-card reveal" data-project data-category="math"
+            data-search="topology metric spaces point-set compactness connectedness homeomorphism quotient topology invariants Chitrabhanu Chaudhuri summer reading mathematical physics">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__meta"><strong>NISER</strong> · May – Jul 2025<br>Summer reading · Dr. Chitrabhanu Chaudhuri</span>
+                <span class="badge badge--quiet">Foundations</span>
+              </div>
+
+              <div>
+                <h3 class="project-card__title">Topological structures &amp; metric spaces</h3>
+                <p class="project-card__sub">Point-set topology as the grammar of physical invariants</p>
+              </div>
+
+              <div class="formula">(X, d) → homeomorphism → quotient space → invariant</div>
+
+              <ul class="project-card__list">
+                <li>Studied metric spaces, point-set topology, continuity, compactness and connectedness.</li>
+                <li>Examined homeomorphisms, quotient topologies and topological invariants relevant to physical systems.</li>
+              </ul>
+
+              <div class="tag-row">
+                <span class="tag">Metric spaces</span>
+                <span class="tag">Compactness</span>
+                <span class="tag">Quotient topology</span>
+              </div>
+            </div>
+
+            <div class="project-card__foot">
+              <button class="link-quiet" type="button" data-open-project="topology">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 5h16M4 12h16M4 19h10" stroke-linecap="round" />
+                </svg>
+                Reading notes &amp; citation
+              </button>
+            </div>
+          </article>
+
+          <p class="empty-state" id="researchEmpty" hidden>
+            No project matches that combination. <strong>Reset the filters</strong> to see all five.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ═══════════════════════════════════════════════════════════════════
+         02 · LIVE LAB
+         ════════════════════════════════════════════════════════════════-->
+    <section class="section" id="lab" aria-labelledby="lab-title">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div class="section__head-main">
+            <span class="kicker kicker--verdigris">02 — Interactive</span>
+            <h2 class="section__title" id="lab-title">The instrument panel. <em>Change something, watch it respond.</em></h2>
+            <p class="section__desc">
+              Four working models. The detector instrument is an analytic reconstruction anchored to the
+              measured quantities of the 4H-SiC study; the Burgers panel recomputes an exact shock and
+              its spectrum <em>in your browser</em>, with a real 1024-point FFT — no network, no libraries.
+            </p>
+          </div>
+          <span class="section__index mono">04 modules</span>
+        </div>
+
+        <div class="module-tabs reveal" role="group" aria-label="Choose an instrument module">
+          <button class="module-tab" type="button" data-lab-module="lgad" aria-pressed="true">
+            <span class="module-tab__num">A</span>
+            <span class="module-tab__label">4H-SiC LGAD</span>
+            <span class="module-tab__hint">Detector</span>
+          </button>
+          <button class="module-tab" type="button" data-lab-module="burgers" aria-pressed="false">
+            <span class="module-tab__num">B</span>
+            <span class="module-tab__label">Burgers spectrum</span>
+            <span class="module-tab__hint">Spectral</span>
+          </button>
+          <button class="module-tab" type="button" data-lab-module="galaxy" aria-pressed="false">
+            <span class="module-tab__num">C</span>
+            <span class="module-tab__label">Galaxy CNN</span>
+            <span class="module-tab__hint">SciML</span>
+          </button>
+          <button class="module-tab" type="button" data-lab-module="pinn" aria-pressed="false">
+            <span class="module-tab__num">D</span>
+            <span class="module-tab__label">Inverse PINN</span>
+            <span class="module-tab__hint">SciML</span>
+          </button>
+        </div>
+
+        <div class="lab reveal">
+          <!-- Controls-->
+          <div class="card lab__panel">
+            <div>
+              <div class="lab__badge" id="labModuleBadge">Detector instrument</div>
+              <h3 class="lab__title" id="labModuleTitle">4H-SiC LGAD response</h3>
+              <p class="lab__desc" id="labModuleDesc"></p>
+            </div>
+
+            <!-- LGAD controls-->
+            <div class="lab__controls" id="labControlsLgad">
+              <div class="control">
+                <div class="control__row">
+                  <label class="control__label" for="labBias">Reverse bias</label>
+                  <span class="control__value" id="labBiasOut">250 V · above V_pt</span>
+                </div>
+                <input class="range" type="range" id="labBias" min="30" max="360" step="5" value="250" />
+              </div>
+
+              <div class="control">
+                <div class="control__row">
+                  <span class="control__label">Proton fluence</span>
+                </div>
+                <div class="seg" role="group" aria-label="Proton fluence">
+                  <button class="seg__btn" type="button" data-fluence="0" aria-pressed="true">Unirradiated</button>
+                  <button class="seg__btn" type="button" data-fluence="1" aria-pressed="false">1×10¹⁴ n<sub>eq</sub>/cm²</button>
+                </div>
+              </div>
+
+              <div class="control">
+                <div class="control__row">
+                  <span class="control__label">Plot</span>
+                </div>
+                <div class="seg" role="group" aria-label="Plot type">
+                  <button class="seg__btn" type="button" data-lgad-view="cv" aria-pressed="true">1/C² Mott–Schottky</button>
+                  <button class="seg__btn" type="button" data-lgad-view="field" aria-pressed="false">Field profile</button>
+                </div>
+              </div>
+
+              <div class="metric-grid" id="labMetrics" aria-live="polite"></div>
+            </div>
+
+            <!-- Burgers controls-->
+            <div class="lab__controls" id="labControlsBurgers" hidden>
+              <div class="control">
+                <div class="control__row">
+                  <label class="control__label" for="labNu">Kinematic viscosity ν</label>
+                  <span class="control__value control__value--verdigris" id="labNuOut">ν = 1.0e-3</span>
+                </div>
+                <input class="range" type="range" id="labNu" min="-3.5" max="-1.5" step="0.125" value="-3" />
+              </div>
+
+              <div class="control">
+                <div class="control__row">
+                  <span class="control__label">View</span>
+                </div>
+                <div class="seg" role="group" aria-label="Burgers view">
+                  <button class="seg__btn" type="button" data-burgers-view="profile" aria-pressed="true">Shock profile</button>
+                  <button class="seg__btn" type="button" data-burgers-view="spectrum" aria-pressed="false">Energy spectrum</button>
+                </div>
+              </div>
+
+              <div class="metric-grid" id="labMetricsBurgers" aria-live="polite"></div>
+
+              <p class="lab__note">
+                The spectrum view runs a radix-2 FFT over 1,024 samples of the exact tanh shock, then fits
+                the inertial range. It reproduces the slope reported in the study without calling any server.
+              </p>
+            </div>
+
+            <!-- Galaxy controls-->
+            <div class="lab__controls" id="labControlsGalaxy" hidden>
+              <div class="control">
+                <div class="control__row">
+                  <span class="control__label">Figure</span>
+                </div>
+                <div class="seg seg--wrap" role="group" aria-label="Galaxy figure">
+                  <button class="seg__btn" type="button" data-galaxy-fig="0" aria-pressed="true">ROC</button>
+                  <button class="seg__btn" type="button" data-galaxy-fig="1" aria-pressed="false">Confusion</button>
+                  <button class="seg__btn" type="button" data-galaxy-fig="2" aria-pressed="false">Per-class</button>
+                </div>
+              </div>
+              <div class="metric-grid">
+                <div class="metric"><div class="metric__label">ROC–AUC</div><div class="metric__value">0.966</div></div>
+                <div class="metric"><div class="metric__label">PR–AUC</div><div class="metric__value metric__value--verdigris">0.983</div></div>
+                <div class="metric"><div class="metric__label">Macro-F1</div><div class="metric__value metric__value--amber">0.893</div></div>
+                <div class="metric"><div class="metric__label">Test galaxies</div><div class="metric__value metric__value--violet">23,433</div></div>
+              </div>
+              <p class="lab__note">Every figure is the project's own committed output — nothing is redrawn or simulated here.</p>
+            </div>
+
+            <!-- PINN controls-->
+            <div class="lab__controls" id="labControlsPinn" hidden>
+              <div class="control">
+                <div class="control__row">
+                  <span class="control__label">Figure</span>
+                </div>
+                <div class="seg seg--wrap" role="group" aria-label="PINN figure">
+                  <button class="seg__btn" type="button" data-pinn-fig="0" aria-pressed="true">UV scaling</button>
+                  <button class="seg__btn" type="button" data-pinn-fig="1" aria-pressed="false">Bias</button>
+                  <button class="seg__btn" type="button" data-pinn-fig="2" aria-pressed="false">3D field</button>
+                </div>
+              </div>
+              <div class="metric-grid">
+                <div class="metric"><div class="metric__label">Relative L² error</div><div class="metric__value">6.0e-4</div></div>
+                <div class="metric"><div class="metric__label">Pseudo-experiments</div><div class="metric__value metric__value--verdigris">4,000</div></div>
+                <div class="metric"><div class="metric__label">UV scaling</div><div class="metric__value metric__value--amber">1D → 3D</div></div>
+                <div class="metric"><div class="metric__label">Correction</div><div class="metric__value metric__value--violet">one-loop</div></div>
+              </div>
+              <p class="lab__note">Estimator diagnostics from the exact-constraint PINN study, shown as committed.</p>
+            </div>
+          </div>
+
+          <!-- Chart / figure-->
+          <div class="card lab__chart">
+            <div class="chart-head">
+              <span class="chart-title" id="labChartTitle">1/C² — Mott–Schottky</span>
+              <span class="badge badge--signal" id="labChartSub">Unirradiated</span>
+            </div>
+
+            <div class="chart-canvas-wrap" id="labCanvasWrap">
+              <canvas id="labChart" role="img" aria-label="Interactive chart of the selected detector or fluid quantity."></canvas>
+            </div>
+
+            <div class="lab-figure" id="labFigure" hidden></div>
+
+            <div class="chart-foot">
+              <span id="labFootnote">Analytic instrument calibrated to measured anchors of the SICAR study.</span>
+              <a href="https://github.com/Aryans-lab" target="_blank" rel="noopener">
+                source
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:.7rem;height:.7rem">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         03 · EXPERIMENTAL
+         ════════════════════════════════════════════════════════════════-->
+    <section class="section" id="experimental" aria-labelledby="exp-title">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div class="section__head-main">
+            <span class="kicker kicker--amber">03 — At the bench</span>
+            <h2 class="section__title" id="exp-title">Experimental physics <em>&amp; instrumentation.</em></h2>
+            <p class="section__desc">
+              Two semesters of NISER SPS laboratory work: recovering microvolt signals from noise,
+              pulling the Landé g-factor out of an ESR line, and counting Franck–Hertz thresholds in neon.
+            </p>
+          </div>
+          <span class="section__index mono">NISER SPS Labs</span>
+        </div>
+
+        <div class="exp-grid reveal">
+          <article class="card exp-card">
+            <span class="exp-card__bench">Modern physics · spin resonance</span>
+            <h3 class="exp-card__title">RF electron spin resonance on DPPH</h3>
+            <p class="exp-card__desc">Recovered the resonance line of a DPPH sample with a phase-sensitive lock-in, then fitted the line to extract the Landé g-factor and the linewidth.</p>
+            <div class="exp-card__metric"><span>Measured</span><span>g ≈ 2.0036</span></div>
+          </article>
+
+          <article class="card exp-card">
+            <span class="exp-card__bench">Modern physics · Zeeman</span>
+            <h3 class="exp-card__title">Normal &amp; anomalous Zeeman splitting</h3>
+            <p class="exp-card__desc">Resolved the normal and anomalous patterns in a swept field using a high-finesse Fabry–Pérot etalon as the resolving element.</p>
+            <div class="exp-card__metric"><span>Derived</span><span>Bohr magneton μ<sub>B</sub></span></div>
+          </article>
+
+          <article class="card exp-card">
+            <span class="exp-card__bench">Modern physics · detection</span>
+            <h3 class="exp-card__title">Phase-sensitive lock-in detection</h3>
+            <p class="exp-card__desc">Operated lock-in amplifiers to lift microvolt AC signals out of backgrounds several orders of magnitude larger.</p>
+            <div class="exp-card__metric"><span>Floor</span><span>µV recovered</span></div>
+          </article>
+
+          <article class="card exp-card">
+            <span class="exp-card__bench">Modern physics · spectroscopy</span>
+            <h3 class="exp-card__title">Atomic &amp; molecular spectroscopy</h3>
+            <p class="exp-card__desc">Hydrogen Balmer emission, iodine vapour rovibronic absorption, and the quantized inelastic thresholds of neon in a Franck–Hertz tube.</p>
+            <div class="exp-card__metric"><span>Series</span><span>Balmer · I₂ · F–H</span></div>
+          </article>
+
+          <article class="card exp-card exp-card--span2">
+            <span class="exp-card__bench">Optics · interferometry</span>
+            <h3 class="exp-card__title">Michelson &amp; Fabry–Pérot interferometry</h3>
+            <p class="exp-card__desc">Aligned both instruments to measure laser coherence length, the free spectral range FSR = c/2nL, and cavity finesse — then profiled TEM₀₀ Gaussian beam propagation (w₀, z<sub>R</sub>), polarization states under Malus's law, and grating / slit diffraction.</p>
+            <div class="exp-card__metric"><span>Properties</span><span>coherence · FSR · finesse</span></div>
+          </article>
+
+          <article class="card exp-card exp-card--span2">
+            <span class="exp-card__bench">Solid state &amp; electronics</span>
+            <h3 class="exp-card__title">Magnetism, OPAMPs and digital logic</h3>
+            <p class="exp-card__desc">Traced ferromagnetic B–H hysteresis loops and paramagnetic susceptibility by Quincke's method, captured Fizeau and Cornu fringes, then designed and tested IC 741 active filters, BJT amplifiers and TTL/CMOS counters.</p>
+            <div class="exp-card__metric"><span>Built</span><span>IC 741 · BJT · TTL/CMOS</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         04 · EDUCATION & SKILLS
+         ════════════════════════════════════════════════════════════════-->
+    <section class="section" id="academics" aria-labelledby="edu-title">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div class="section__head-main">
+            <span class="kicker">04 — Foundations</span>
+            <h2 class="section__title" id="edu-title">Education, coursework <em>&amp; the technical stack.</em></h2>
+          </div>
+          <span class="section__index mono">2024 – 2029</span>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Degree + coursework-->
+          <div class="card timeline-card reveal">
+            <div class="degree">
+              <span class="degree__seal serif" aria-hidden="true">N</span>
+              <div>
+                <h3 class="degree__name">Integrated M.Sc. Physics <span class="mono degree__tag">5-year</span></h3>
+                <p class="degree__org">School of Physical Sciences · NISER, HBNI Bhubaneswar</p>
+                <p class="degree__dates">Aug 2024 — May 2029 · currently year 3 / semester V</p>
+              </div>
+            </div>
+
+            <div class="gpa">
+              <div class="gpa__num">9.01</div>
+              <div class="gpa__meta"><strong>CGPA / 10</strong><br>across completed semesters</div>
+              <div class="gpa__bar" aria-hidden="true"><i></i></div>
+            </div>
+
+            <div>
+              <div class="tabs" role="tablist" aria-label="Coursework categories">
+                <button class="tab" type="button" role="tab" aria-selected="true" data-course-tab="all">All <span class="mono">16</span></button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-course-tab="theory">Theory</button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-course-tab="lab">Laboratory</button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-course-tab="next">Semester VI</button>
+              </div>
+              <div class="course-grid" id="courseGrid" role="tabpanel" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <!-- Skills-->
+          <div class="card timeline-card reveal">
+            <div>
+              <span class="kicker kicker--plain kicker--violet">Toolkit</span>
+            </div>
+
+            <div class="skill-stack">
+              <div class="skill-group">
+                <div class="skill-group__head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="2" /><path d="M9 9h6v6H9z" />
+                  </svg>
+                  Device simulation &amp; instruments
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Silvaco TCAD</span>
+                  <span class="tag">Synopsys Sentaurus</span>
+                  <span class="tag">Lock-in amplifiers</span>
+                  <span class="tag">Fabry–Pérot</span>
+                  <span class="tag">Michelson</span>
+                  <span class="tag">ESR &amp; Zeeman setups</span>
+                  <span class="tag">Digital oscilloscopes</span>
+                </div>
+              </div>
+
+              <div class="skill-group skill-group--verdigris">
+                <div class="skill-group__head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="m8 6-5 6 5 6M16 6l5 6-5 6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Programming &amp; scientific computing
+                </div>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">NumPy</span>
+                  <span class="tag">SciPy</span>
+                  <span class="tag">Matplotlib</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">SymPy</span>
+                  <span class="tag">Linux</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">LaTeX</span>
+                  <span class="tag">DSA</span>
+                </div>
+              </div>
+
+              <div class="skill-group skill-group--amber">
+                <div class="skill-group__head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M3 17c3 0 3-10 6-10s3 10 6 10 3-6 6-6" stroke-linecap="round" />
+                  </svg>
+                  Numerical modelling
+                </div>
+                <div class="tag-row">
+                  <span class="tag">ODE / PDE solvers</span>
+                  <span class="tag">RK4</span>
+                  <span class="tag">Symplectic</span>
+                  <span class="tag">Crank–Nicolson</span>
+                  <span class="tag">Spectral FFT</span>
+                  <span class="tag">LU / Gauss–Seidel / Thomas</span>
+                  <span class="tag">Monte Carlo</span>
+                </div>
+              </div>
+
+              <div class="skill-group skill-group--violet">
+                <div class="skill-group__head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <circle cx="12" cy="6" r="2.4" /><circle cx="6" cy="17" r="2.4" /><circle cx="18" cy="17" r="2.4" />
+                    <path d="M12 8.4v3.2M10 13l-2.6 2.2M14 13l2.6 2.2" stroke-linecap="round" />
+                  </svg>
+                  Machine learning &amp; data analysis
+                </div>
+                <div class="tag-row">
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">scikit-learn</span>
+                  <span class="tag">XGBoost</span>
+                  <span class="tag">PINNs</span>
+                  <span class="tag">CNNs</span>
+                  <span class="tag">Statistical inference</span>
+                  <span class="tag">AI agents</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         05 · HONORS
+         ════════════════════════════════════════════════════════════════-->
+    <section class="section" id="honors" aria-labelledby="honors-title">
+      <div class="shell">
+        <div class="section__head reveal">
+          <div class="section__head-main">
+            <span class="kicker kicker--amber">05 — Distinctions</span>
+            <h2 class="section__title" id="honors-title">Honors, fellowships <em>&amp; leadership.</em></h2>
+          </div>
+          <span class="section__index mono">2022 – present</span>
+        </div>
+
+        <div class="honor-grid reveal">
+          <article class="card honor honor--feature">
+            <div class="honor__top">
+              <span class="honor__icon honor__icon--amber" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M8 3h8v5a4 4 0 0 1-8 0V3Z" stroke-linejoin="round" />
+                  <path d="M8 5H5v2a3 3 0 0 0 3 3M16 5h3v2a3 3 0 0 1-3 3" stroke-linecap="round" />
+                  <path d="M12 12v4M9 21h6M12 16a2 2 0 0 0 2-2M12 16a2 2 0 0 1-2-2" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="honor__kicker">Experimental HEP award</span>
+            </div>
+            <h3 class="honor__title">Best Poster Award (Experimental)</h3>
+            <p class="honor__desc">Heavy Flavour Meet 2026, Gujarat, India — for the 4H-SiC LGAD characterization programme.</p>
+            <div class="tag-row"><span class="tag">2026</span><span class="tag">National</span></div>
+          </article>
+
+          <article class="card honor">
+            <div class="honor__top">
+              <span class="honor__icon honor__icon--signal" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8L12 3Z" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="honor__kicker">Govt. of India fellowship</span>
+            </div>
+            <h3 class="honor__title">DAE DST-DISHA Scholarship</h3>
+            <p class="honor__desc">Funded by the Department of Atomic Energy for the full five-year integrated programme at NISER.</p>
+            <div class="tag-row"><span class="tag">2024 – 2029</span></div>
+          </article>
+
+          <article class="card honor">
+            <div class="honor__top">
+              <span class="honor__icon honor__icon--verdigris" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M4 19V5M4 19h16" stroke-linecap="round" />
+                  <path d="M8 15v-4M12 15V7M16 15v-6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="honor__kicker">National entrance examinations</span>
+            </div>
+            <h3 class="honor__title">AIR 88 in NEST · 99.6 percentile</h3>
+            <p class="honor__desc">Also <strong>97.8 percentile</strong> in JEE Main 2024 and <strong>AIR 369</strong> in WBJEE 2024.</p>
+            <div class="tag-row"><span class="tag">2024</span></div>
+          </article>
+
+          <article class="card honor">
+            <div class="honor__top">
+              <span class="honor__icon honor__icon--violet" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M8 16h8M9.5 20h5" stroke-linecap="round" />
+                  <path d="M12 3a5.5 5.5 0 0 0-3.2 9.98V16h6.4v-3.02A5.5 5.5 0 0 0 12 3Z" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="honor__kicker">Competitive chess</span>
+            </div>
+            <h3 class="honor__title">Captain, NISER chess team</h3>
+            <p class="honor__desc">U-19 KVS national champion, peak rating <strong>above 1750</strong>, with multiple national and state medals.</p>
+            <div class="tag-row"><span class="tag">2022 – present</span></div>
+          </article>
+
+          <article class="card honor">
+            <div class="honor__top">
+              <span class="honor__icon honor__icon--signal" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2.2 2.2M16.8 16.8 19 19M5 19l2.2-2.2M16.8 7.2 19 5" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="honor__kicker">Public physics outreach</span>
+            </div>
+            <h3 class="honor__title">Founder &amp; science communicator</h3>
+            <p class="honor__desc">Built and ran a physics education platform with <strong>over 200,000 followers</strong> — teaching the subject, not just posting about it.</p>
+            <div class="tag-row"><span class="tag">2022 – 2024</span><span class="tag">200k+</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         06 · CONTACT
+         ════════════════════════════════════════════════════════════════-->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <div class="contact reveal">
+          <div class="contact__inner">
+            <div>
+              <span class="kicker">06 — Correspondence</span>
+              <h2 class="contact__title" id="contact-title">Open for Summer 2027 <em>research internships</em> and collaborations.</h2>
+              <p class="contact__desc">
+                Interested in semiconductor radiation detectors, condensed-matter experiment,
+                quantum optics, or scientific machine learning? I would rather hear about the
+                problem than a generic enquiry — send the open question and the measurement you
+                wish existed.
+              </p>
+
+              <div class="contact__actions">
+                <a class="email-btn" href="mailto:aryan.bandyopadhyay@niser.ac.in">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m4 7 8 6 8-6" stroke-linecap="round" />
+                  </svg>
+                  aryan.bandyopadhyay@niser.ac.in
+                </a>
+                <button class="btn btn--ghost" type="button" data-copy="aryan.bandyopadhyay@niser.ac.in" data-copy-msg="Email address copied">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                  </svg>
+                  Copy address
+                </button>
+                <button class="btn btn--quiet" type="button" data-open-cv>Open CV</button>
+              </div>
+            </div>
+
+            <dl class="coords">
+              <div class="coords__head">
+                <span>Direct coordinates</span>
+                <span class="mono" id="clock" aria-label="Current UTC time">--:--:-- UTC</span>
+              </div>
+              <div class="coords__row">
+                <dt>Institution</dt>
+                <dd>SPS, NISER Bhubaneswar</dd>
+              </div>
+              <div class="coords__row">
+                <dt>Email</dt>
+                <dd><a href="mailto:aryan.bandyopadhyay@niser.ac.in">aryan.bandyopadhyay@niser.ac.in</a></dd>
+              </div>
+              <div class="coords__row">
+                <dt>Telephone</dt>
+                <dd><a href="tel:+919874957175">+91 98749 57175</a></dd>
+              </div>
+              <div class="coords__row">
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/Aryans-lab" target="_blank" rel="noopener">@Aryans-lab</a></dd>
+              </div>
+              <div class="coords__row">
+                <dt>Canonical</dt>
+                <dd><a href="https://aryanbandyopadhyay.me">aryanbandyopadhyay.me</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════════════-->
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="brand">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" fill="#070c15" />
+                <path d="M11 29 20 10l9 19" stroke="#38bdf8" stroke-width="1.7" stroke-linejoin="round" />
+                <path d="M15.4 23h9.2" stroke="#34d399" stroke-width="1.7" stroke-linecap="round" />
+                <circle cx="20" cy="10" r="2.1" fill="#fbbf24" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">Aryan Bandyopadhyay</span>
+              <span class="brand__role">NISER Bhubaneswar</span>
+            </span>
+          </span>
+          <p>
+            Hand-built with plain HTML, CSS and JavaScript. No frameworks, no CDN, no analytics,
+            no third-party fonts. Every figure on this page is real output from the repositories
+            it links to.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>Sections</h3>
+          <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#lab">Live lab</a></li>
+            <li><a href="#experimental">Laboratory</a></li>
+            <li><a href="#academics">Education</a></li>
+            <li><a href="#honors">Honors</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Elsewhere</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/Aryans-lab" target="_blank" rel="noopener">
+                GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Aryans-lab/Computational_Physics_Lab" target="_blank" rel="noopener">
+                Computational Physics Lab
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li><a href="CV_Aryan_Bandyopadhyay.pdf" target="_blank" rel="noopener">Curriculum vitae (PDF)</a></li>
+            <li><a href="mailto:aryan.bandyopadhyay@niser.ac.in">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <span>© <span data-year>2026</span> Aryan Bandyopadhyay · School of Physical Sciences, NISER Bhubaneswar</span>
+        <div class="footer__base-links">
+          <button class="link-quiet" type="button" data-open-cmd>
+            <span class="kbd">⌘</span><span class="kbd">K</span>&nbsp;Command palette
+          </button>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 20V6m0 0-6 6m6-6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       OVERLAYS
+       ══════════════════════════════════════════════════════════════════-->
+  <!-- Project technical sheet-->
+  <div class="overlay overlay--center" id="projectSheet" role="dialog" aria-modal="true" aria-labelledby="projSheetTitle" aria-hidden="true">
+    <div class="sheet sheet--wide">
+      <div class="sheet__head">
+        <div class="sheet__head-main">
+          <div class="sheet__eyebrow" id="projSheetEyebrow">Project</div>
+          <h3 class="sheet__title" id="projSheetTitle">Technical sheet</h3>
+          <p class="sheet__sub" id="projSheetSub"></p>
+        </div>
+        <button class="sheet__close" type="button" data-close="projectSheet" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="sheet__body" id="projSheetBody"></div>
+    </div>
+  </div>
+
+  <!-- CV viewer-->
+  <div class="overlay overlay--center" id="cvSheet" role="dialog" aria-modal="true" aria-labelledby="cvSheetTitle" aria-hidden="true">
+    <div class="sheet sheet--wide cv-sheet">
+      <div class="sheet__head">
+        <div class="sheet__head-main">
+          <div class="sheet__eyebrow">Curriculum vitae</div>
+          <h3 class="sheet__title" id="cvSheetTitle">Aryan Bandyopadhyay — CV</h3>
+          <p class="sheet__sub">Two pages · generated from the academic record</p>
+        </div>
+        <button class="sheet__close" type="button" data-close="cvSheet" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="sheet__body">
+        <iframe id="cvFrame" title="Aryan Bandyopadhyay curriculum vitae" loading="lazy" hidden></iframe>
+        <div class="sheet__fallback" id="cvFallback" hidden>
+          <div class="cv-card">
+            <span class="cv-card__doc" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 3v5h5" stroke-linejoin="round" />
+                <path d="M6 3h8l5 5v13H6z" stroke-linejoin="round" />
+                <path d="M9 13h6M9 17h4" stroke-linecap="round" />
+              </svg>
+            </span>
+            <h4 class="cv-card__title">Aryan Bandyopadhyay — Curriculum Vitae</h4>
+            <p class="cv-card__meta">Two pages · PDF · 227 KB</p>
+            <p class="cv-card__body">
+              This browser cannot display PDFs inline — a common limitation on mobile
+              and inside embedded viewers. The file is right here:
+            </p>
+            <div class="cv-card__actions">
+              <a class="btn btn--primary btn--sm" href="CV_Aryan_Bandyopadhyay.pdf" download="CV_Aryan_Bandyopadhyay.pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                  <path d="M12 3v12m0 0 4-4m-4 4-4-4" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M5 19h14" stroke-linecap="round" />
+                </svg>
+                Download PDF
+              </a>
+              <a class="btn btn--ghost btn--sm" href="CV_Aryan_Bandyopadhyay.pdf" target="_blank" rel="noopener">Open in new tab</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet__foot">
+        <a class="btn btn--sm btn--ghost" href="CV_Aryan_Bandyopadhyay.pdf" download="CV_Aryan_Bandyopadhyay.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 19h14" stroke-linecap="round" />
+          </svg>
+          Download
+        </a>
+        <a class="btn btn--sm btn--ghost" href="CV_Aryan_Bandyopadhyay.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <button class="btn btn--sm btn--primary" type="button" data-print-cv>Print</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command palette-->
+  <div class="overlay overlay--top" id="cmdPalette" role="dialog" aria-modal="true" aria-label="Command palette" aria-hidden="true">
+    <div class="sheet sheet--narrow">
+      <div class="cmd__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" stroke-linecap="round" />
+        </svg>
+        <input type="text" id="cmdInput" placeholder="Jump to a section, open a project, copy email…" autocomplete="off" spellcheck="false" aria-label="Search commands" />
+        <button class="kbd" type="button" data-close="cmdPalette" aria-label="Close command palette">ESC</button>
+      </div>
+      <div class="cmd__list" id="cmdList" role="listbox" aria-label="Commands"></div>
+      <div class="cmd__foot">
+        <span><span class="kbd">↑</span><span class="kbd">↓</span> navigate</span>
+        <span><span class="kbd">↵</span> run</span>
+        <span><span class="kbd">esc</span> close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Figure lightbox-->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged figure" aria-hidden="true">
+    <button class="lightbox__close" type="button" data-close="lightbox" aria-label="Close figure">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="m6 6 12 12M18 6 6 18" stroke-linecap="round" />
+      </svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </div>
+
+  <!-- Toast-->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+      <path d="m4 12 5 5L20 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <span data-toast-text>Copied</span>
+  </div>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

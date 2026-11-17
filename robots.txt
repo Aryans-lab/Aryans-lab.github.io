@@ -1,0 +1,16 @@
+# robots.txt — aryanbandyopadhyay.me
+# Plain text, no AI-training opt-out games: index the science.
+
+User-agent: *
+Allow: /
+Disallow: /assets/fonts/
+
+# Explicitly welcome scholarly crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://aryanbandyopadhyay.me/sitemap.xml
+Host: https://aryanbandyopadhyay.me
