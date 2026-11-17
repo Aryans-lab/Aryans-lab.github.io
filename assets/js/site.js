@@ -187,7 +187,7 @@
 
     function apply(mode) {
       root.setAttribute('data-theme', mode);
-      if (meta) meta.setAttribute('content', mode === 'light' ? '#f7f5f0' : '#05070c');
+      if (meta) meta.setAttribute('content', mode === 'light' ? '#f7f5f0' : '#060911');
       $$('[data-theme-toggle]').forEach(function (btn) {
         btn.setAttribute('aria-label', mode === 'light' ? 'Switch to obsidian lab theme' : 'Switch to journal paper theme');
         btn.setAttribute('title', mode === 'light' ? 'Obsidian lab (dark)' : 'Journal paper (light)');
