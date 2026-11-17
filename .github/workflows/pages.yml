@@ -1,0 +1,83 @@
+# Publish this repository to GitHub Pages as a build artifact.
+#
+# Why this exists
+# ---------------
+# The repository was configured with `build_type: legacy` (source: main:/), which
+# serves the branch contents directly. On that path GitHub Pages cannot hold an
+# account-level *domain verification* claim (the `_github-pages-challenge-*` TXT
+# record) across builds, so the custom domain stays in
+# `protected_domain_state: "unverified"` and no Let's Encrypt certificate is ever
+# ordered — the site keeps presenting the *.github.io wildcard certificate and
+# browsers report ERR_CERT_COMMON_NAME_INVALID.
+#
+# Publishing via Actions uploads an immutable artifact instead, which keeps the
+# verification state intact and makes custom-domain + HTTPS provisioning reliable.
+#
+# Activating it (one-time, in the web UI — the API cannot do this):
+#   Settings → Pages → Build and deployment → Source: "GitHub Actions"
+#
+# The site is fully static, so there is no build step: the repository root is
+# published exactly as committed.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Least privilege required by the Pages deployment flow.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deployments at once; let an in-flight run finish so the site is
+# not left half-published. Do not cancel in progress.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Assemble artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Verify the custom domain binding is present
+        run: |
+          if [ ! -f CNAME ]; then
+            echo "::error::CNAME is missing from the repository root."
+            echo "Without it the custom domain binding is dropped on deploy."
+            exit 1
+          fi
+          echo "Custom domain: $(cat CNAME)"
+
+      - name: Verify the entry point exists
+        run: |
+          for f in index.html 404.html assets/css/site.css assets/js/site.js; do
+            [ -f "$f" ] || { echo "::error::Missing required file: $f"; exit 1; }
+          done
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # The whole repository root. The action excludes .git and .github.
+          path: '.'
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
